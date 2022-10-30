@@ -13,7 +13,6 @@ bcrypt==3.2.0
 beir==1.0.1
 bitarray==2.6.0
 blinker==1.4
-Brlapi==0.8.3
 cachetools==4.2.4
 certifi==2020.6.20
 cffi==1.15.1
