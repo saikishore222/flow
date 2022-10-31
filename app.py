@@ -7,6 +7,11 @@ headers = {"Authorization": f"Bearer {env['DEST_TOKEN']}"}
 transport = AIOHTTPTransport(url=env['DEST_URL'], headers=headers)
 client = Client(transport=transport)
 app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return 'You are at home page.'
+
 @app.route('/account/<id>', methods=['GET'])
 def Account(id):
     print(type(id))
